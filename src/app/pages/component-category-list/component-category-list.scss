@@ -53,6 +53,8 @@
 .docs-component-category-list-card {
   overflow: hidden;
   transition: background 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .docs-component-category-list-card-image-wrapper {

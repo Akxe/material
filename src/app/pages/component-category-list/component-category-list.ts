@@ -1,6 +1,7 @@
 import {CommonModule, NgIf, NgFor, AsyncPipe} from '@angular/common';
 import {Component, NgModule, OnDestroy, OnInit} from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
+import {MatRipple} from '@angular/material/core';
 import {ActivatedRoute, Params, RouterModule, RouterLink} from '@angular/router';
 import {combineLatest, Observable, Subscription} from 'rxjs';
 
@@ -17,7 +18,7 @@ import {ComponentPageTitle} from '../page-title/page-title';
   templateUrl: './component-category-list.html',
   styleUrls: ['./component-category-list.scss'],
   standalone: true,
-  imports: [NavigationFocus, NgIf, NgFor, RouterLink, AsyncPipe]
+  imports: [NavigationFocus, NgIf, NgFor, RouterLink, AsyncPipe, MatRipple]
 })
 export class ComponentCategoryList implements OnInit, OnDestroy {
   params: Observable<Params> | undefined;
